@@ -102,11 +102,14 @@ h2{
 }
 
 .intro-wrapper p::after{
-    content: url('../img/Abstract1.png'); 
+    content: '';
+    background-image: url('../img/Abstract1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 110%;
+    left: 103%;
     top: 50%;
 }
 
@@ -181,9 +184,11 @@ h2{
 }
 
 .team::after{
-    content: url('../img/Abstract3.png');
+    content: '';
+    background-image: url('../img/Abstract3.png');
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
     width: 219px;
     height: 150px;
     position: absolute;
@@ -604,16 +609,13 @@ h2{
     content: '';
     background-image: url("../img/Abstract7.png");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
     width: 40%;
     height: 33%;
-    background-repeat: no-repeat;
-    vertical-align: bottom;
-    background-position: center, bottom;
     position: absolute;
-    display: block;
     left: 33%;
-    bottom: 0px;
-    z-index: 1;
+    bottom: 0;
 }
 /*-- /CONTACTS --*/
 
@@ -680,7 +682,7 @@ h2{
         font-size: 21px;
     }
     .services h2{
-    margin-bottom: 230px;
+        margin-bottom: 230px;
     }
     .catalog{
         padding-bottom: 150px;
@@ -745,7 +747,7 @@ h2{
         padding-right: 15px;
     }
     .team-wrapper p {
-        flex-basis: 750px
+        flex-basis: 750px;
     }
     .type h3{
         font-size: 26px;
@@ -833,6 +835,7 @@ h2{
     .intro-wrapper p{
         width: 85%;
         padding-top: 60px;
+        margin-left: 0;
         font-size: 20px;
     }
     .analise {
@@ -849,7 +852,7 @@ h2{
     }
     .analise-text p::before {
         background-size: contain;
-        top: 105px;
+        top: 138px;
         width: 280px;
         height: 180px;
         left: -70px;
@@ -867,7 +870,7 @@ h2{
         padding-right: 15px;
     }
     .team-wrapper p {
-        flex-basis: 700px
+        flex-basis: 700px;
     }
     .type h3{
         font-size: 26px;
@@ -971,8 +974,222 @@ h2{
     }
 }
 @media (max-width: 767px){
-    h2{
-        font-size: 83px;
+     body{
+        font-size: 20px;
+    }
+    .container{
+        width: 95%;
+    }
+    .index-logo{
+        max-width: 95%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .intro-wrapper p{
+        width: 95%;
+        margin: 0;
+        padding: 0 10px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .intro-wrapper p::after {
+        display: none;
+    }
+    .analise {
+        padding-bottom: 25px;
+    }
+    .analise-text{
+        font-size: 18px;
+        padding-top: 170px;
+        padding-left: 0;
+        flex-basis: auto;
+        width: 95%;
+    }
+    .analise-wrapper{
+        flex-wrap: wrap;
+    }
+    .analise-wrapper span {
+        flex-basis: 280px;
+    }
+    .analise-wrapper img {
+        padding-top: 20px;
+    }
+    .analise-text p::before {
+        background-size: contain;
+        top: 34px;
+        width: 280px;
+        height: 180px;
+        left: 12px;
+    } 
+    .team{
+        padding-bottom: 105px;
+    }
+    .team::before{
+        width: 125px;
+    }
+    .team::after{
+        width: 140px;
+    }
+    .team h2{
+        margin-top: 70px;
+        padding-right: 0;
+        margin-bottom: 120px;
+        padding-left: 40px;
+    }
+    .team-wrapper{
+        flex-wrap: wrap;
+    }
+    .team-wrapper span {
+        padding-right: 0;
+    }
+    .team-wrapper img{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .team-wrapper p {
+        flex-basis: auto;
+        width: 95%;
+    }
+    .type h3{
+        font-size: 24px;
+    }
+    .firm-icon span{
+        font-size: 30px;
+    }
+    .clients {
+        padding-top: 30px;
+    }
+    .clients h2{
+        padding-right: 0;
+    }
+    .clients ul{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .clients li {
+    flex-basis: 33%;
+    }
+    .clients li:nth-last-child(1) {
+        display: none;
+    }
+    .clients a{
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .clients p{
+        padding-left: 10px; 
+    }
+    .text{
+        margin: 0 auto;
+        padding-left: 0;
+        width: 95%;
+    }
+    .cases-intro h2::before {
+        width: 60px;
+        height: 60px;
+    }
+    .cases h4{
+        font-size: 24px;
+        margin: 25px 0;
+    }
+    .case1 i{
+        font-size: 18px;
+    }
+     .case2 i{
+        font-size: 18px;
+    }
+    .case3 i{
+        font-size: 18px;
+    }
+    .case1-text div{
+        flex-basis: 90%; 
+        margin: 5px;
+    }
+    .case2-text div{
+        flex-basis: 90%; 
+        margin: 5px;
+    }
+    .case2-text{
+        padding-right: 0;
+    }
+    .case1-text p{
+        font-size: 16px;
+    }
+    .result span{
+        font-size: 30px;
+    }
+    .case2-text p{
+        font-size: 16px;
+    }
+    .case3-text p{
+        font-size: 16px;
+    }
+    .firm-icon {
+        margin-bottom: 20px;
+    }
+    .firm-icon span::before {
+        margin-right: 10px; 
+        width: 50px;
+        height: 50px;
+    }
+    .result{
+        flex-wrap: wrap;
+        width: 95%;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-left: auto;
+    }   
+    .services h2{
+        margin-bottom: 150px;
+        margin-left: 0;
+    }
+    .catalog{
+        padding-left: 0px;
+        padding-bottom: 40px;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+    .price h3{
+        padding-left: 15px;
+    }
+    .price h4{
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .price p{
+        font-size: 12px;
+    }
+    .price{
+        flex-basis: 50%;
+        padding-left: 140px;
+        padding-bottom: 35px;
+    }
+    .price:nth-child(1) {
+        padding-left: 140px;
+    }
+    .price1::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }
+    .price2::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }  
+    .price3::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }
+    .contacts p{
+        margin-left: 10px;
+    }
+    .contact::after{
+        width: 75%;
+        height: 30%;
+        left: 13%;
     }
 }
-
