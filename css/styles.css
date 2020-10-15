@@ -151,7 +151,9 @@ h2{
 }
 
 .analise-text p::before{
-    content: url('../img/analyze-text.png');
+    content: '';
+    background-image: url('../img/analyze-text.png');
+    background-repeat: no-repeat;
     width: 315px;
     height: 200px;
     position: absolute;
@@ -601,16 +603,16 @@ h2{
 .contact::after{
     content: '';
     background-image: url("../img/Abstract7.png");
-    background-size: cover;
-    width: 600px;
-    height: 115px;  
-    display: inline-block;
-    vertical-align: middle;
-    display: block;
+    background-size: contain;
+    width: 40%;
+    height: 33%;
+    background-repeat: no-repeat;
+    vertical-align: bottom;
+    background-position: center, bottom;
     position: absolute;
-    left: 50%; 
+    display: block;
+    left: 33%;
     bottom: 0px;
-    margin-left: -350px;   
     z-index: 1;
 }
 /*-- /CONTACTS --*/
@@ -708,25 +710,28 @@ h2{
 
 @media (max-width: 1200px){
    body{
-        font-size: 21px;
-    }
-    h2{
-        font-size: 47px;
+        font-size: 22px;
     }
     .intro-wrapper p{
         padding-top: 60px;
-        font-size: 18px;
+        font-size: 20px;
     }
     .analise {
         padding-bottom: 200px;
     }
     .analise-text{
-        font-size: 18px;
+        font-size: 20px;
         padding-top: 270px;
+        padding-left: 100px;
+        flex-basis: 500px;
     }
     .analise-text p::before {
-        top: 125px;
-    }
+        background-size: contain;
+        top: 135px;
+        width: 280px;
+        height: 180px;
+        left: -10px;
+    } 
     .team{
         padding-bottom: 290px;
     }
@@ -736,71 +741,235 @@ h2{
     .team::after{
         width: 170px;
     }
+    .team-wrapper span {
+        padding-right: 15px;
+    }
+    .team-wrapper p {
+        flex-basis: 750px
+    }
     .type h3{
-        font-size: 25px;
+        font-size: 26px;
     }
     .firm-icon span{
-        font-size: 32px;
+        font-size: 33px;
+    }
+    .clients ul{
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .clients a{
+        padding: 16px;
+        padding-bottom: 60px;
+    }
+    .text{
+        padding-left: 0;
+        width: 80%;
     }
     .cases h4{
-        font-size: 21px;
+        font-size: 26px;
+        margin: 25px 0;
     }
     .case1 i{
-        font-size: 18px;
+        font-size: 20px;
     }
      .case2 i{
-        font-size: 18px;
+        font-size: 20px;
     }
     .case3 i{
-        font-size: 18px;
+        font-size: 20px;
     }
     .case1-text p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .result span{
-        font-size: 32px;
+        font-size: 33px;
     }
     .case2-text p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .case3-text p{
-        font-size: 16px;
+        font-size: 18px;
     }
     .services h2{
         margin-bottom: 230px;
+        margin-left: 0;
     }
     .catalog{
+        padding-left: 0px;
         padding-bottom: 150px;
+        margin-right: -20px;
     }
     .price h4{
-        font-size: 14px;
+        font-size: 15px;
     }
     .price p{
-        font-size: 12px;
+        font-size: 13px;
     }
     .price{
-    flex-basis: 230px;
+    flex-basis: 200px;
     }
     .price1::before{
         width: 100px;
-        left: -70px;
+        left: -50px;
     }
     .price2::before{
         width: 100px; 
-        left: -130px;   
+        left: -110px;   
     }  
     .price3::before{
         width: 100px;
-        left: -130px;
+        left: -110px;
     }
 }
 
 @media (max-width: 992px){
-    h2{
-        font-size: 83px;
+    body{
+        font-size: 22px;
+    }
+    .index-logo{
+        max-width: 95%;
+        padding-left: 0;
+    }
+    .intro-wrapper p{
+        width: 85%;
+        padding-top: 60px;
+        font-size: 20px;
+    }
+    .analise {
+        padding-bottom: 200px;
+    }
+    .analise-text{
+        font-size: 20px;
+        padding-top: 270px;
+        padding-left: 15px;
+        flex-basis: 600px;
+    }
+    .analise-wrapper span {
+        flex-basis: 600px;
+    }
+    .analise-text p::before {
+        background-size: contain;
+        top: 105px;
+        width: 280px;
+        height: 180px;
+        left: -70px;
+    } 
+    .team{
+        padding-bottom: 290px;
+    }
+    .team::before{
+        width: 220px;
+    }
+    .team::after{
+        width: 170px;
+    }
+    .team-wrapper span {
+        padding-right: 15px;
+    }
+    .team-wrapper p {
+        flex-basis: 700px
+    }
+    .type h3{
+        font-size: 26px;
+    }
+    .firm-icon span{
+        font-size: 33px;
+    }
+    .clients ul{
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .clients li {
+    flex-basis: 33%;
+    }
+    .clients li:nth-last-child(1) {
+        display: none;
+    }
+    .clients a{
+        padding: 16px;
+        padding-bottom: 60px;
+    }
+    .text{
+        padding-left: 0;
+        width: 80%;
+    }
+    .cases h4{
+        font-size: 26px;
+        margin: 25px 0;
+    }
+    .case1 i{
+        font-size: 20px;
+    }
+     .case2 i{
+        font-size: 20px;
+    }
+    .case3 i{
+        font-size: 20px;
+    }
+    .case1-text p{
+        font-size: 18px;
+    }
+    .result span{
+        font-size: 33px;
+    }
+    .case2-text p{
+        font-size: 18px;
+    }
+    .case3-text p{
+        font-size: 18px;
+    }
+    .services h2{
+        margin-bottom: 150px;
+        margin-left: 0;
+    }
+    .catalog{
+        padding-left: 0px;
+        padding-bottom: 150px;
+        margin-right: -20px;
+        flex-wrap: wrap;
+    }
+    .price h3{
+        padding-left: 50px;
+    }
+    .price h4{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    .price p{
+        font-size: 13px;
+    }
+    .price{
+        flex-basis: 60%;
+        padding-left: 170px;
+        padding-bottom: 35px;
+    }
+    .price:nth-child(1) {
+        padding-left: 170px;
+    }
+    .price1::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }
+    .price2::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }  
+    .price3::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }
+    .contacts p{
+        margin-left: 0;
+    }
+    .contact::after{
+        width: 60%;
+        height: 30%;
+        left: 21%;
     }
 }
-
 @media (max-width: 767px){
     h2{
         font-size: 83px;
