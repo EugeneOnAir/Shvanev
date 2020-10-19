@@ -386,13 +386,19 @@ h2{
 }
 
 .phone{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0 -80px;
 }
 
-.phone img{
+.phone ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phone li{
     width: 28%;
     margin: 15px;
     margin-top: 55px;
@@ -767,11 +773,11 @@ h2{
     .phone{
         margin: 0 -50px;
     }
-    .phone img{
+    .phone li{
         margin-top: 40px;
         margin-bottom: 90px;
     }
-    .phone2 img{
+    .phone2 li{
         margin-top: 87px;
     }
     .case1 i{
@@ -905,11 +911,11 @@ h2{
     .phone{
         margin: 0 -35px;
     }
-    .phone img{
+    .phone li{
         margin-top: 0;
         margin-bottom: 80px;
     }
-    .phone2 img{
+    .phone2 li{
         margin-top: 58px;
     }
     .cases h4{
@@ -1112,11 +1118,11 @@ h2{
     .phone{
         margin: 0;
     }
-    .phone img{
+    .phone li{
         margin: 0;
         margin-bottom: 40px;
     }
-    .phone2 img{
+    .phone2 li{
         margin-top: 58px;
     }
     .cases h4{
