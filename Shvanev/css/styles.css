@@ -1,0 +1,1312 @@
+* {
+    /*     border: red solid 2px;
+    box-sizing: inherit;
+    }
+
+    html{
+        box-sizing: border-box; 
+        outline: 1px solid red; */
+}
+
+@font-face{
+    font-family: 'Geometria';
+    src:url('../fonts/Geometria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Geometria';
+    src:url('../fonts/Geometria-Heavy.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Geometria';
+    src:url('../fonts/Geometria-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Geometria';
+    src:url('../fonts/Geometria-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body{
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+
+    font-family: 'Geometria', Arial, sans-serif;
+    font-size: 33px;
+    line-height: normal;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: #000000;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+button:hover, input:hover  {
+  background-color: #aaaaaa;
+}
+a:focus, button:focus, input:focus{
+    border: 2px solid #f3f3f3;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h2{
+    font-size: 83px;
+    line-height: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 85%;
+    padding: 10px;
+    margin: 0 auto; 
+}
+
+
+.container h3{
+    font-weight: 800;
+    text-transform: uppercase;    
+    margin: 14px 0;
+}
+
+/*---INTRO---*/
+
+.index-logo{
+    max-width: 85%; 
+    padding-left: 3%
+}
+
+
+.intro-wrapper p{
+    text-align: left;
+    font-size: 29px;
+    line-height: normal;
+
+    width: 90%;
+    margin: 0;
+    margin-left: -20px;
+    padding-top: 90px;
+    padding-bottom:60px;
+    position: relative;
+}
+
+.intro-wrapper p::after{
+    content: '';
+    background-image: url('../img/Abstract1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 103%;
+    top: 50%;
+}
+
+/*---ANALISE---*/
+.analise{
+    color: #000000;
+
+    background-color: #f3f3f3;
+    /* background-image: url("../img/bckgrnd.png"); */
+ 
+    padding-bottom: 270px;
+
+}
+
+.analise-wrapper{;
+    display: flex;
+    justify-content: space-around;
+}
+
+.analise-wrapper span{
+    margin: 0;
+    display: flex;
+    flex-basis: 450px;
+}
+
+.analise-wrapper img{
+    width: 100%;
+    align-self: center;
+    padding-top: 175px;
+
+}
+
+.analise-text{
+    font-size: 29px;
+    line-height: normal;
+    text-align: left;
+
+    flex-basis: 795px;
+    position: relative;
+    padding-top: 420px;
+    padding-left: 120px
+}
+
+.analise-text p::before{
+    content: '';
+    background-image: url('../img/analyze-text.png');
+    background-repeat: no-repeat;
+    width: 315px;
+    height: 200px;
+    position: absolute;
+    left: -10px;
+    top: 285px;
+}
+
+/*---TEAM---*/
+.team{
+    /* background-image: url("../img/bckgrnd.png"); */
+    padding-bottom: 340px;
+    position: relative;
+}
+
+.team::before{
+    content: '';
+    background-image: url('../img/Abstract2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 360px;
+    height: 350px;
+    position: absolute;
+   
+}
+
+.team::after{
+    content: '';
+    background-image: url('../img/Abstract3.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 219px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.team h2{
+    text-align: center;
+    padding-right: 5%;
+    margin-bottom: 200px;
+}
+
+.team-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.team-wrapper span{
+    margin: 0;
+    display: flex;
+    flex-basis: 330px;
+    padding: 0;
+    padding-right: 50px;
+}
+
+.team-wrapper img{
+    width: 100%;
+    align-self: center;
+}
+
+.team-wrapper p{
+    text-align: left;
+    flex-basis: 900px;
+}
+
+/*---CLIENTS---*/
+.clients{
+    background-image: url("../img/back-clients.png"); 
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.clients h2{
+    text-align: center;
+    padding-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+    
+.clients p{
+    text-align: left;
+
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.clients ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    margin-top: 180px;
+}
+
+.clients li{
+
+    flex-basis: 20%;
+}
+
+.clients a{
+    display: block;
+    padding: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+
+
+
+/*---CASES---*/
+.cases-intro{
+    background-image: url("../img/back-cases.png"); 
+    padding-top: 25%;
+    padding-bottom: 25%;
+}
+
+.cases-intro-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cases-intro-wrapper h2 {
+    margin: 0;
+    
+}
+
+.cases-intro h2::before{
+    content: '';
+    background-image: url("../img/Abstract1.png");
+    background-size: contain;
+    width: 95px;
+    height: 95px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.cases h4{
+    font-size: 33px;
+    line-height: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px;
+    padding-top: 10px;
+}
+
+.type h3{
+    font-size: 41px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform:uppercase;
+}
+
+.firm-icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 85px;
+}
+
+.firm-icon span{
+    font-size: 52px;
+    line-height: normal;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+}
+
+.firm-icon span::before{
+    content: '';
+    background-image: url("../img/world.png");
+    background-size: contain;
+    width: 70px;
+    height: 70px;  
+    margin-right: 40px;
+    display: inline-block;
+    vertical-align: middle;
+} 
+
+.text{
+    width: 65%;
+    padding-left: 155px;
+    margin: 0 75px;
+    text-align: justify;
+}
+
+.remark{
+    padding-left: 40px;
+}
+
+.result{
+    display: flex;
+    margin-top:200px;
+    margin-bottom: 80px;
+}
+
+.result span{
+    text-transform:uppercase;
+    font-size: 52px;
+    line-height: normal;
+    font-weight: 800;
+    margin-right: 34px;
+}
+
+.result p{
+    margin: 5px 0;
+    text-align: justify;
+    flex-basis: 1180px;
+
+}
+
+.phone{
+    margin: 0 -80px;
+}
+
+.phone ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.phone li{
+    width: 28%;
+    margin: 15px;
+    margin-top: 55px;
+    margin-bottom: 90px;
+}
+
+/*---CASE1---*/
+.case1{
+    color: #000000;
+
+    background-color: #f3f3f3;
+}
+
+.case1 i{
+    font-size: 29px;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.case1-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 90%;
+    padding-left: 4%;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.case1-text div{
+    flex-basis: 40%;
+    margin: 20px;
+}
+
+.case1-text p{
+    font-size: 25px;
+    line-height: normal;
+    margin:0;
+}
+/*--- /CASE1---*/
+
+/*---CASE2---*/
+.case2 i{
+    font-size: 29px;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.white-icon span::before{
+    content: '';
+    background-image: url("../img/world-white.png");
+    background-size: contain;
+    width: 70px;
+    height: 70px;  
+    margin-right: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.case2-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding-right: 50px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+}
+
+.case2-text div{
+    width: 1065px;
+    margin: 20px 40px;
+}
+
+.case2-text p{
+    font-size: 25px;
+    line-height: normal;
+    margin:0;
+}
+
+.result-case2{
+    margin-top:80px;
+}
+
+.phone2 img{
+    margin-top: 102px;
+}
+
+/*--- /CASE2---*/
+
+
+/*---CASE3---*/
+.case3{
+    color: #000000;
+
+    background-color: #f3f3f3;
+}
+
+/*-- SERVICES --*/
+.services h2{
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 270px;
+    margin-left: -65px;
+}
+
+.catalog{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-bottom: 395px;
+    margin-right: -90px; 
+}
+
+.price{
+    flex-basis: 315px;
+    position: relative;
+}
+
+.price:nth-child(1){
+    padding-left: 60px; 
+}
+
+
+.price1::before{
+    content: '';
+    background-image: url("../img/Abstract4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;  
+    display: inline-block;
+    position: absolute;
+    left: -110px;
+    top: 25px;
+}
+
+.price2::before{
+    content: '';
+    background-image: url("../img/Abstract5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;  
+    display: inline-block;
+    position: absolute;
+    left: -170px;
+    top: 25px;
+}
+
+.price3::before{
+    content: '';
+    background-image: url("../img/Abstract6.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;  
+    display: inline-block;
+    position: absolute;
+    left: -170px;
+    top: 25px;
+}
+
+.price h3{
+    margin: 0;
+}
+
+.price h4{
+    font-size: 24px;
+    line-height: normal; 
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.price p{
+    font-size: 16px;
+    line-height: normal; 
+    margin-top: 40px;
+}
+/*-- /SERVICES --*/
+
+
+/*-- CONTACTS --*/
+.contacts{
+    color: #000000;
+
+    background-color: #ffffff;  
+
+    position: relative;  
+}
+
+.contacts p{
+    padding-top: 105px;
+    padding-bottom: 110px;
+    margin: 0;
+    margin-left: -50px;
+}
+
+.contact::after{
+    content: '';
+    background-image: url("../img/Abstract7.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 40%;
+    height: 33%;
+    position: absolute;
+    left: 33%;
+    bottom: 0;
+}
+/*-- /CONTACTS --*/
+
+/*-- FEEDBACK--*/
+.feedback{
+    background-image: url("../img/back-cases.png"); 
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+
+}
+.feedback-title{
+    display: block;
+    font-size: 50px;
+    line-height: normal;
+    font-weight: 800;
+    text-align: center;
+    margin: 70px auto;
+}
+
+.form-group{
+    max-width: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.form-body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.8) url('../img/load.gif') center / 50px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+.form-body.sending::after{
+    opacity: 1;
+    visibility: visible;
+}
+.form-group label{
+    width: 300px;
+    margin: 20px 0;
+}
+
+.form-control{
+    color: #000000;
+    background-color: #f3f3f3;
+
+    font-size: 15px;
+    flex-basis: 300px;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    padding-left: 10px;
+    -webkit-appearance: none 
+}
+.form-control.error{
+    -moz-box-shadow: 0 0 15px #ff0000; 
+    -webkit-box-shadow: 0 0 15px #ff0000; 
+    box-shadow: 0 0 15px #ff0000; 
+}
+.feedback button{
+    display: block;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.button{
+    color: #000000;
+    background-color: #f3f3f3;
+
+    padding: 10px 60px;
+    cursor: pointer;
+}
+/*-- /FEEDBACK --*/
+
+@media (max-width: 1800px){
+    body{
+        font-size: 27px;
+    }
+    h2{
+        font-size: 62px;
+    }
+    .intro-wrapper p{
+        padding-top: 60px;
+        font-size: 24px;
+    }
+    .analise {
+        padding-bottom: 200px;
+    }
+    .analise-text{
+        font-size: 24px;
+        padding-top: 270px;
+    }
+    .analise-text p::before {
+        top: 125px;
+    }
+    .team{
+        padding-bottom: 290px;
+    }
+    .team::before{
+        width: 280px;
+    }
+    .team::after{
+        width: 200px;
+    }
+    .type h3{
+        font-size: 32px;
+    }
+    .firm-icon span{
+        font-size: 40px;
+    }
+    .cases h4{
+        font-size: 27px;
+    }
+    .case1 i{
+        font-size: 24px;
+    }
+     .case2 i{
+        font-size: 24px;
+    }
+    .case3 i{
+        font-size: 24px;
+    }
+    .case1-text p{
+        font-size: 21px;
+    }
+    .result span{
+        font-size: 40px;
+    }
+    .case2-text p{
+        font-size: 21px;
+    }
+    .case3-text p{
+        font-size: 21px;
+    }
+    .services h2{
+        margin-bottom: 230px;
+    }
+    .catalog{
+        padding-bottom: 150px;
+    }
+    .price h4{
+        font-size: 20px;
+    }
+    .price p{
+        font-size: 15px;
+    }
+    .price{
+    flex-basis: 210px;
+    }
+    .price1::before{
+        width: 120px;
+        left: -70px;
+    }
+    .price2::before{
+        width: 120px; 
+        left: -130px;   
+    }  
+    .price3::before{
+        width: 120px;
+        left: -130px;
+    }
+}
+
+@media (max-width: 1200px){
+   body{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 62px;
+    }
+    .intro-wrapper p{
+        padding-top: 60px;
+        font-size: 20px;
+    }
+    .analise {
+        padding-bottom: 200px;
+    }
+    .analise-text{
+        font-size: 20px;
+        padding-top: 270px;
+        padding-left: 100px;
+        flex-basis: 500px;
+    }
+    .analise-text p::before {
+        background-size: contain;
+        top: 135px;
+        width: 280px;
+        height: 180px;
+        left: -10px;
+    } 
+    .team{
+        padding-bottom: 290px;
+    }
+    .team::before{
+        width: 220px;
+    }
+    .team::after{
+        width: 170px;
+    }
+    .team-wrapper span {
+        padding-right: 15px;
+    }
+    .team-wrapper p {
+        flex-basis: 750px;
+    }
+    .type h3{
+        font-size: 26px;
+    }
+    .firm-icon span{
+        font-size: 33px;
+    }
+    .clients ul{
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .clients a{
+        padding: 16px;
+        padding-bottom: 60px;
+    }
+    .text{
+        padding-left: 0;
+        width: 80%;
+    }
+    .cases h4{
+        font-size: 26px;
+        margin: 25px 0;
+    }
+    .phone{
+        margin: 0 -50px;
+    }
+    .phone li{
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+    .phone2 li{
+        margin-top: 87px;
+    }
+    .case1 i{
+        font-size: 20px;
+    }
+     .case2 i{
+        font-size: 20px;
+    }
+    .case3 i{
+        font-size: 20px;
+    }
+    .case1-text p{
+        font-size: 18px;
+    }
+    .result span{
+        font-size: 33px;
+    }
+    .case2-text p{
+        font-size: 18px;
+    }
+    .case3-text p{
+        font-size: 18px;
+    }
+    .services h2{
+        margin-bottom: 230px;
+        margin-left: 0;
+    }
+    .catalog{
+        padding-left: 0px;
+        padding-bottom: 150px;
+        margin-right: -20px;
+    }
+    .price h4{
+        font-size: 15px;
+    }
+    .price p{
+        font-size: 13px;
+    }
+    .price{
+    flex-basis: 200px;
+    }
+    .price1::before{
+        width: 100px;
+        left: -50px;
+    }
+    .price2::before{
+        width: 100px; 
+        left: -110px;   
+    }  
+    .price3::before{
+        width: 100px;
+        left: -110px;
+    }
+}
+
+@media (max-width: 992px){
+    body{
+        font-size: 22px;
+    }
+    h2{
+        font-size: 62px;
+    }
+    .index-logo{
+        max-width: 95%;
+        padding-left: 0;
+    }
+    .intro-wrapper p{
+        width: 85%;
+        padding-top: 60px;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .analise {
+        padding-bottom: 200px;
+    }
+    .analise-text{
+        font-size: 20px;
+        padding-top: 270px;
+        padding-left: 15px;
+        flex-basis: 600px;
+    }
+    .analise-wrapper span {
+        flex-basis: 600px;
+    }
+    .analise-text p::before {
+        background-size: contain;
+        top: 138px;
+        width: 280px;
+        height: 180px;
+        left: -70px;
+    } 
+    .team{
+        padding-bottom: 290px;
+    }
+    .team::before{
+        width: 220px;
+    }
+    .team::after{
+        width: 170px;
+    }
+    .team-wrapper span {
+        padding-right: 15px;
+    }
+    .team-wrapper p {
+        flex-basis: 700px;
+    }
+    .type h3{
+        font-size: 26px;
+    }
+    .firm-icon span{
+        font-size: 33px;
+    }
+    .clients ul{
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+    .clients li {
+    flex-basis: 33%;
+    }
+    .clients li:nth-last-child(1) {
+        display: none;
+    }
+    .clients a{
+        padding: 16px;
+        padding-bottom: 60px;
+    }
+    .text{
+        padding-left: 0;
+        width: 80%;
+    }
+    .phone{
+        margin: 0 -35px;
+    }
+    .phone li{
+        margin-top: 0;
+        margin-bottom: 80px;
+    }
+    .phone2 li{
+        margin-top: 58px;
+    }
+    .cases h4{
+        font-size: 26px;
+        margin: 25px 0;
+    }
+    .case1 i{
+        font-size: 20px;
+    }
+     .case2 i{
+        font-size: 20px;
+    }
+    .case3 i{
+        font-size: 20px;
+    }
+    .case1-text p{
+        font-size: 18px;
+    }
+    .result span{
+        font-size: 33px;
+    }
+    .case2-text p{
+        font-size: 18px;
+    }
+    .case3-text p{
+        font-size: 18px;
+    }
+    .services h2{
+        margin-bottom: 150px;
+        margin-left: 0;
+    }
+    .catalog{
+        padding-left: 0px;
+        padding-bottom: 150px;
+        margin-right: -20px;
+        flex-wrap: wrap;
+    }
+    .price h3{
+        padding-left: 50px;
+    }
+    .price h4{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    .price p{
+        font-size: 13px;
+    }
+    .price{
+        flex-basis: 60%;
+        padding-left: 170px;
+        padding-bottom: 35px;
+    }
+    .price:nth-child(1) {
+        padding-left: 170px;
+    }
+    .price1::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }
+    .price2::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }  
+    .price3::before{
+        width: 140px;
+        left: 15px;
+        top: 0px;
+    }
+    .contacts p{
+        margin-left: 0;
+    }
+    .contact::after{
+        width: 60%;
+        height: 30%;
+        left: 21%;
+    }
+}
+@media (max-width: 767px){
+     body{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 58px;
+    }
+    .container{
+        width: 95%;
+    }
+    .index-logo{
+        max-width: 95%;
+        padding-left: 0;
+        margin: 0 auto;
+    }
+    .intro-wrapper p{
+        width: 95%;
+        margin: 0;
+        padding: 0 10px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        margin-left: 0;
+        font-size: 18px;
+    }
+    .intro-wrapper p::after {
+        display: none;
+    }
+    .analise {
+        padding-bottom: 25px;
+    }
+    .analise-text{
+        font-size: 18px;
+        padding-top: 170px;
+        padding-left: 0;
+        flex-basis: auto;
+        width: 95%;
+    }
+    .analise-wrapper{
+        flex-wrap: wrap;
+    }
+    .analise-wrapper span {
+        flex-basis: 280px;
+    }
+    .analise-wrapper img {
+        padding-top: 20px;
+    }
+    .analise-text p::before {
+        background-size: contain;
+        top: 34px;
+        width: 280px;
+        height: 180px;
+        left: 12px;
+    } 
+    .team{
+        padding-bottom: 105px;
+    }
+    .team::before{
+        width: 125px;
+    }
+    .team::after{
+        width: 140px;
+    }
+    .team h2{
+        margin-top: 70px;
+        padding-right: 0;
+        margin-bottom: 120px;
+        padding-left: 40px;
+    }
+    .team-wrapper{
+        flex-wrap: wrap;
+    }
+    .team-wrapper span {
+        padding-right: 0;
+    }
+    .team-wrapper img{
+        margin: 0 auto;
+        width: 200px;
+    }
+    .team-wrapper p {
+        flex-basis: auto;
+        width: 95%;
+    }
+    .type h3{
+        font-size: 24px;
+    }
+    .firm-icon span{
+        font-size: 30px;
+    }
+    .clients {
+        padding-top: 30px;
+    }
+    .clients h2{
+        padding-right: 0;
+    }
+    .clients ul{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .clients li {
+    flex-basis: 33%;
+    }
+    .clients li:nth-last-child(1) {
+        display: none;
+    }
+    .clients a{
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+    .clients p{
+        padding-left: 10px; 
+    }
+    .text{
+        margin: 0 auto;
+        padding-left: 0;
+        width: 95%;
+    }
+    .cases-intro h2::before {
+        width: 60px;
+        height: 60px;
+    }
+    .phone{
+        margin: 0;
+    }
+    .phone li{
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .phone2 li{
+        margin-top: 58px;
+    }
+    .cases h4{
+        font-size: 24px;
+        margin: 25px 0;
+    }
+    .case1 i{
+        font-size: 18px;
+    }
+     .case2 i{
+        font-size: 18px;
+    }
+    .case3 i{
+        font-size: 18px;
+    }
+    .case1-text div{
+        flex-basis: 90%; 
+        margin: 5px;
+    }
+    .case2-text div{
+        flex-basis: 90%; 
+        margin: 5px;
+    }
+    .case2-text{
+        padding-right: 0;
+    }
+    .case1-text p{
+        font-size: 16px;
+    }
+    .result span{
+        font-size: 30px;
+    }
+    .case2-text p{
+        font-size: 16px;
+    }
+    .case3-text p{
+        font-size: 16px;
+    }
+    .firm-icon {
+        margin-bottom: 20px;
+    }
+    .firm-icon span::before {
+        margin-right: 10px; 
+        width: 50px;
+        height: 50px;
+    }
+    .result{
+        flex-wrap: wrap;
+        width: 95%;
+        margin-right: auto;
+        margin-top: 100px;
+        margin-left: auto;
+    }   
+    .services h2{
+        margin-bottom: 150px;
+        margin-left: 0;
+    }
+    .catalog{
+        padding-left: 0px;
+        padding-bottom: 40px;
+        margin-right: 0;
+        flex-wrap: wrap;
+    }
+    .price h3{
+        padding-left: 15px;
+    }
+    .price h4{
+        font-size: 14px;
+        padding-left: 15px;
+    }
+    .price p{
+        font-size: 12px;
+    }
+    .price{
+        flex-basis: 50%;
+        padding-left: 140px;
+        padding-bottom: 35px;
+    }
+    .price:nth-child(1) {
+        padding-left: 140px;
+    }
+    .price1::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }
+    .price2::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }  
+    .price3::before{
+        width: 115px;
+        left: 15px;
+        top: 0px;
+    }
+    .contacts p{
+        margin-left: 10px;
+    }
+    .contact::after{
+        width: 75%;
+        height: 30%;
+        left: 13%;
+    }
+}
